@@ -1,0 +1,43 @@
+.c-calendar {
+    max-width:100%;
+    width:1200px;
+    padding:18px;
+    border:1px solid #e6e6e6;
+    border-radius:6px;
+    background-color:#fff;
+}
+.c-calendar__head {
+    margin-bottom:12px;
+    text-align:center;
+}
+.c-calendar__head-title {
+    font-size:24px;
+    margin-bottom:24px;
+}
+.c-calendar__head-nav {
+    margin-left:auto;
+}
+.c-calendar__head-nav-button {
+    padding:3px 12px;
+    border:0;
+    background:none;
+    cursor:pointer;
+}
+.c-calendar__head-nav-button--today {
+    border:1px solid #dadcdf;
+}
+
+@media screen and (min-width:600px) {
+    .c-calendar {
+        display:flex;
+        flex-direction:column;
+        height:600px;
+        max-height:100%;
+    }
+    .c-calendar__head {
+        display:flex;
+    }
+    .c-calendar__head-title {
+        margin-bottom:0;
+    }
+}

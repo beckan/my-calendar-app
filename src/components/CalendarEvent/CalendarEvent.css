@@ -1,0 +1,9 @@
+.c-calendar-event {
+    margin-bottom:6px;
+    padding:12px;
+    background-color:#fbe5af;
+    text-align:center;
+}
+.c-calendar-event:last-child {
+    margin-bottom:0;
+}

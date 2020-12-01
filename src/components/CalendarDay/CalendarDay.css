@@ -1,0 +1,35 @@
+.c-calendar-day {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+}
+.c-calendar-day__head {
+    padding:12px;
+    font-size:14px;
+    text-align:center;
+}
+.c-calendar-day__body {
+    height:100%;
+    border-top:1px solid #dadcdf;
+    border-bottom:1px solid #dadcdf;
+    border-left:1px solid #dadcdf;
+    min-height:50px;
+    padding:6px 0;
+}
+.c-calendar-day:last-child .c-calendar-day__body {
+    border-right:1px solid #dadcdf;
+}
+
+.c-calendar-day--is-today .c-calendar-day__head {
+    text-decoration:underline;
+}
+
+.c-calendar-day--is-sunday .c-calendar-day__head {
+    color:#ed6862;
+}
+
+@media screen and (min-width:600px) {
+    .c-calendar-day {
+    }
+}
